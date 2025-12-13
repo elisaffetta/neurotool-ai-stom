@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Neurotool AI Design System */
+    --background: 210 20% 98%;
+    --foreground: 0 0% 10%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    
+    /* Brand Blue */
+    --primary: 215 100% 58%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 0 0% 10%;
+    
+    --muted: 210 15% 94%;
+    --muted-foreground: 215 10% 42%;
+    
+    --accent: 215 100% 95%;
+    --accent-foreground: 215 100% 40%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 214 20% 91%;
+    --input: 214 20% 91%;
+    --ring: 215 100% 58%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Neurotool tokens */
+    --brand-blue: 215 100% 58%;
+    --brand-blue-light: 215 100% 65%;
+    --brand-blue-dark: 215 100% 45%;
+    --text-dark: 0 0% 10%;
+    --text-grey: 215 10% 42%;
+    --text-light: 215 10% 60%;
+    --surface: 0 0% 100%;
+    --surface-hover: 210 20% 98%;
+    --success: 152 69% 40%;
+    --success-light: 152 69% 95%;
+    
+    /* Shadows */
+    --shadow-soft: 0 10px 30px -5px hsla(0, 0%, 0%, 0.05);
+    --shadow-hover: 0 20px 40px -10px hsla(215, 100%, 58%, 0.15);
+    --shadow-card: 0 4px 20px -2px hsla(0, 0%, 0%, 0.08);
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210, 20%, 98%) 0%, hsl(215, 100%, 97%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 99%) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(215, 100%, 58%) 0%, hsl(215, 100%, 50%) 100%);
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
+    
+    /* Sidebar (keeping defaults) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 20% 8%;
+    --foreground: 210 40% 98%;
+    --card: 222 20% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 20% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 215 100% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 20% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 20% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 20% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 20% 17%;
+    --input: 217 20% 17%;
+    --ring: 212 26% 83%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer components {
+  /* Container - более узкий для лучшей читаемости */
+  .container-neurotool {
+    @apply mx-auto max-w-5xl px-6 sm:px-8 lg:px-12;
+  }
+  
+  /* Section styling */
+  .section {
+    @apply py-12 md:py-16;
+  }
+  
+  .section-alt {
+    @apply bg-card;
+  }
+  
+  /* Typography - увеличенные размеры */
+  .heading-1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-extrabold text-foreground leading-tight tracking-tight;
+  }
+  
+  .heading-2 {
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold text-foreground leading-tight;
+  }
+  
+  .heading-3 {
+    @apply text-xl md:text-2xl font-semibold text-foreground;
+  }
+  
+  .text-large {
+    @apply text-lg md:text-xl text-muted-foreground leading-relaxed;
+  }
+  
+  .text-body {
+    @apply text-base md:text-lg text-muted-foreground leading-relaxed;
+  }
+  
+  /* Cards */
+  .card-neurotool {
+    @apply bg-card rounded-2xl p-6 md:p-8 shadow-[var(--shadow-card)] transition-all duration-300 hover:shadow-[var(--shadow-hover)] hover:-translate-y-1;
+  }
+  
+  .card-flat {
+    @apply bg-card rounded-xl p-6 border border-border;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-primary text-primary-foreground font-semibold rounded-xl shadow-md transition-all duration-300 hover:shadow-[var(--shadow-hover)] hover:-translate-y-0.5 active:translate-y-0 text-sm md:text-base;
+  }
+  
+  .btn-primary-lg {
+    @apply btn-primary px-8 py-4 md:px-12 md:py-5 text-base md:text-lg;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-card text-primary font-semibold rounded-xl border-2 border-primary transition-all duration-300 hover:bg-accent hover:-translate-y-0.5 text-sm md:text-base;
+  }
+  
+  /* Icon boxes */
+  .icon-box {
+    @apply w-12 h-12 md:w-14 md:h-14 rounded-xl bg-primary flex items-center justify-center text-xl md:text-2xl shrink-0;
+  }
+  
+  .icon-box-light {
+    @apply w-12 h-12 md:w-14 md:h-14 rounded-xl bg-accent flex items-center justify-center text-xl md:text-2xl shrink-0;
+  }
+  
+  /* Trust badges */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 text-sm text-muted-foreground mt-4;
+  }
+  
+  /* Pricing badge */
+  .pricing-badge {
+    @apply absolute -top-3 right-4 px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-full;
+  }
+  
+  .pricing-badge-popular {
+    @apply absolute -top-3 right-4 px-4 py-1.5 bg-gradient-to-r from-primary to-[hsl(var(--brand-blue-dark))] text-primary-foreground text-xs font-bold rounded-full shadow-lg;
+  }
+  
+  /* Big numbers */
+  .big-number {
+    @apply text-4xl md:text-5xl font-extrabold text-primary;
+  }
+  
+  /* Checkmark list */
+  .check-list li {
+    @apply flex items-start gap-3 text-muted-foreground;
+  }
+  
+  .check-list li::before {
+    content: '✅';
+    @apply shrink-0;
+  }
+  
+  /* FAQ Accordion */
+  .faq-item {
+    @apply border-b border-border;
+  }
+  
+  .faq-question {
+    @apply w-full flex items-center justify-between py-5 text-left font-medium text-foreground hover:text-primary transition-colors cursor-pointer;
+  }
+  
+  .faq-answer {
+    @apply max-h-0 overflow-hidden transition-all duration-300 ease-in-out;
+  }
+  
+  .faq-item.active .faq-answer {
+    @apply max-h-96 pb-5;
+  }
+  
+  .faq-icon {
+    @apply w-6 h-6 rounded-full bg-muted flex items-center justify-center text-sm font-bold text-muted-foreground transition-transform duration-300;
+  }
+  
+  .faq-item.active .faq-icon {
+    @apply rotate-45;
+  }
+  
+  /* Step styling */
+  .step-number {
+    @apply w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl md:text-3xl font-bold shrink-0 shadow-lg;
+  }
+  
+  /* Modal */
+  .modal {
+    @apply fixed inset-0 z-50 hidden;
+  }
+  
+  .modal.active {
+    @apply flex items-center justify-center;
+  }
+  
+  .modal-overlay {
+    @apply absolute inset-0 bg-foreground/60 backdrop-blur-sm;
+  }
+  
+  .modal-content {
+    @apply relative bg-card w-[95vw] max-w-5xl max-h-[90vh] rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 fade-in duration-300;
+  }
+  
+  .modal-close {
+    @apply absolute top-4 right-4 w-10 h-10 rounded-full bg-muted hover:bg-destructive hover:text-destructive-foreground flex items-center justify-center transition-colors z-10;
+  }
+  
+  /* Slider styling */
+  .slider-neurotool {
+    @apply w-full h-2 bg-muted rounded-full appearance-none cursor-pointer;
+  }
+  
+  .slider-neurotool::-webkit-slider-thumb {
+    @apply appearance-none w-6 h-6 rounded-full bg-primary shadow-lg cursor-pointer;
+  }
+  
+  .slider-neurotool::-moz-range-thumb {
+    @apply w-6 h-6 rounded-full bg-primary shadow-lg cursor-pointer border-0;
+  }
+  
+  /* Animations */
+  .fade-up {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+  
+  .fade-up.visible {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  /* Pain card special styling */
+  .pain-card {
+    @apply card-neurotool border-l-4 border-l-destructive;
+  }
+  
+  /* Featured pricing */
+  .pricing-featured {
+    @apply relative border-2 border-primary shadow-[var(--shadow-hover)] scale-105;
+  }
+  
+  /* Savings text */
+  .savings-text {
+    @apply text-sm font-semibold text-[hsl(var(--success))];
+  }
+  
+  /* Result block */
+  .result-block {
+    @apply bg-destructive/10 border border-destructive/20 rounded-xl p-6 text-center;
+  }
+  
+  /* Advantage number */
+  .advantage-number {
+    @apply w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold flex items-center justify-center;
+  }
+  
+  /* Process connector */
+  .process-connector {
+    @apply absolute left-7 top-16 bottom-0 w-0.5 border-l-2 border-dashed border-border;
+  }
+  
+  /* Placeholder */
+  .placeholder-box {
+    @apply bg-gradient-to-br from-muted to-background border-2 border-dashed border-border rounded-xl flex items-center justify-center text-muted-foreground text-sm font-medium p-8 min-h-[200px];
+  }
+  
+  /* Metric card */
+  .metric-card {
+    @apply text-center p-4;
+  }
+  
+  .metric-value {
+    @apply text-3xl md:text-4xl font-extrabold text-primary;
+  }
+  
+  .metric-label {
+    @apply text-sm text-muted-foreground mt-1;
+  }
+  
+  /* Example card */
+  .example-card {
+    @apply card-neurotool cursor-pointer;
+  }
+  
+  .example-card:hover .example-cta {
+    @apply text-primary;
+  }
+}
+
+@layer utilities {
+  /* Custom utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+}
