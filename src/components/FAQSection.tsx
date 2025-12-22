@@ -4,7 +4,7 @@ import { Plus, HelpCircle } from "lucide-react";
 const faqs = [
   {
     question: "Что такое GEO-оптимизация?",
-    answer: "Generative Engine Optimization — оптимизация под AI-поисковики: Perplexity, ChatGPT, Google SGE. До 40% запросов идет через AI. Мы структурируем контент для цитирования в AI-ответах.",
+    answer: "Generative Engine Optimization — оптимизация под нейроблоки: Perplexity, ChatGPT, Google SGE. До 40% запросов идет через нейроблоки. Мы структурируем контент для цитирования в ответах нейроблоков.",
   },
   {
     question: "Пишете только про имплантацию?",

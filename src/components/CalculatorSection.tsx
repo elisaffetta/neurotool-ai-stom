@@ -23,11 +23,8 @@ const CalculatorSection = () => {
   return (
     <section className="section section-alt" id="calculator">
       <div className="container-neurotool">
-        <div className="flex items-center justify-center gap-3 mb-6">
-          <div className="icon-box-light">
-            <Calculator className="w-6 h-6 text-primary" />
-          </div>
-          <h2 className="heading-2">Калькулятор стоимости</h2>
+        <div className="text-center mb-6">
+          <h2 className="heading-2 mb-2">Вы можете выбрать нужное вам количество статей и узнать стоимость ниже</h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 items-start">

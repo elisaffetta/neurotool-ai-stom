@@ -17,7 +17,7 @@ const SolutionSection = () => {
             Neurotool AI решает проблему привлечения пациентов в стоматологические клиники
           </h2>
           <p className="text-large max-w-2xl mx-auto">
-            SEO + GEO тексты, которые ранжируются в Google И цитируются AI-поисковиками
+            SEO + GEO тексты, которые ранжируются в Google И цитируются нейроблоками
           </p>
         </div>
         

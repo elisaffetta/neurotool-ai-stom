@@ -2,11 +2,10 @@ import { Bot, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Главная", href: "#hero" },
   { label: "Услуги", href: "#services" },
-  { label: "Тарифы", href: "#pricing" },
-  { label: "Наша технология", href: "#technology" },
   { label: "Решения для ниш", href: "#solutions" },
+  { label: "Наша технология", href: "#technology" },
+  { label: "Тарифы", href: "#pricing" },
   { label: "Блог", href: "#blog" },
 ];
 
@@ -65,7 +64,7 @@ const Header = () => {
             >
               Войти
             </a>
-            <button className="btn-primary text-sm py-2 px-4 hidden sm:block">
+            <button className="relative text-sm py-2 px-4 hidden sm:block font-semibold text-white bg-primary/90 backdrop-blur-md border border-primary/20 rounded-lg shadow-lg shadow-primary/25 hover:bg-primary hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300">
               Заказать за $9.99
             </button>
             <button 
@@ -96,7 +95,7 @@ const Header = () => {
               >
                 Войти
               </a>
-              <button className="btn-primary text-sm py-2 px-4">
+              <button className="relative text-sm py-2 px-4 font-semibold text-white bg-primary/90 backdrop-blur-md border border-primary/20 rounded-lg shadow-lg shadow-primary/25 hover:bg-primary hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
                 Заказать за $9.99
               </button>
             </div>

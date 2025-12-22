@@ -109,7 +109,7 @@ const ComparisonSection = () => {
             {/* Row 4: Scale */}
             <div className="grid grid-cols-[200px_1fr_1fr_1fr] gap-4 mb-4">
               <div className="flex items-center font-semibold text-foreground">
-                📊 Масштаб
+                📊 Масштабирование
               </div>
               <div className="card-flat p-4">
                 <span className="inline-block px-3 py-1 rounded-md bg-destructive/10 text-destructive text-sm font-semibold mb-2">
@@ -118,10 +118,10 @@ const ComparisonSection = () => {
                 <p className="text-sm text-muted-foreground">Один человек быстро выгорает</p>
               </div>
               <div className="card-flat p-4">
-                <span className="inline-block px-3 py-1 rounded-md bg-green-100 text-green-900 text-sm font-semibold mb-2">
-                  Неограниченно
+                <span className="inline-block px-3 py-1 rounded-md bg-amber-100 text-amber-900 text-sm font-semibold mb-2">
+                  Есть лимиты
                 </span>
-                <p className="text-sm text-muted-foreground">Но каждую нужно настраивать, проверять, править</p>
+                <p className="text-sm text-muted-foreground">Ограничения по символам в день/месяц. Каждую статью нужно настраивать и править</p>
               </div>
               <div className="card-flat p-4 bg-primary/5 border border-primary/20">
                 <span className="inline-block px-3 py-1 rounded-md bg-green-100 text-green-900 text-sm font-semibold mb-2">
@@ -134,7 +134,7 @@ const ComparisonSection = () => {
             {/* Row 5: Communication */}
             <div className="grid grid-cols-[200px_1fr_1fr_1fr] gap-4 mb-4">
               <div className="flex items-center font-semibold text-foreground">
-                💬 Общение
+                💬 Коммуникация
               </div>
               <div className="card-flat p-4">
                 <span className="inline-block px-3 py-1 rounded-md bg-amber-100 text-amber-900 text-sm font-semibold mb-2">
@@ -150,9 +150,9 @@ const ComparisonSection = () => {
               </div>
               <div className="card-flat p-4 bg-primary/5 border border-primary/20">
                 <span className="inline-block px-3 py-1 rounded-md bg-green-100 text-green-900 text-sm font-semibold mb-2">
-                  Живые люди в чате
+                  Одно окно заказа и общения
                 </span>
-                <p className="text-sm text-muted-foreground">Простой бриф, общение на понятном языке</p>
+                <p className="text-sm text-muted-foreground">Заказали в окне — там же подключился менеджер для общения</p>
               </div>
             </div>
 
@@ -165,7 +165,7 @@ const ComparisonSection = () => {
                 <span className="inline-block px-3 py-1 rounded-md bg-amber-100 text-amber-900 text-sm font-semibold mb-2">
                   Классический SEO
                 </span>
-                <p className="text-sm text-muted-foreground">Если попросите. GEO не делают</p>
+                <p className="text-sm text-muted-foreground">Копирайтер пишет по вашему ТЗ. GEO не делают</p>
               </div>
               <div className="card-flat p-4">
                 <span className="inline-block px-3 py-1 rounded-md bg-destructive/10 text-destructive text-sm font-semibold mb-2">
@@ -181,57 +181,7 @@ const ComparisonSection = () => {
               </div>
             </div>
 
-            {/* Row 7: Research */}
-            <div className="grid grid-cols-[200px_1fr_1fr_1fr] gap-4 mb-4">
-              <div className="flex items-center font-semibold text-foreground">
-                🔬 Исследование ниши
-              </div>
-              <div className="card-flat p-4">
-                <span className="inline-block px-3 py-1 rounded-md bg-destructive/10 text-destructive text-sm font-semibold mb-2">
-                  Вы делаете сами
-                </span>
-                <p className="text-sm text-muted-foreground">Копирайтер пишет по вашему ТЗ</p>
-              </div>
-              <div className="card-flat p-4">
-                <span className="inline-block px-3 py-1 rounded-md bg-destructive/10 text-destructive text-sm font-semibold mb-2">
-                  Вы делаете сами
-                </span>
-                <p className="text-sm text-muted-foreground">Нужно собрать данные, конкурентов, ключи</p>
-              </div>
-              <div className="card-flat p-4 bg-primary/5 border border-primary/20">
-                <span className="inline-block px-3 py-1 rounded-md bg-green-100 text-green-900 text-sm font-semibold mb-2">
-                  Мы делаем за вас
-                </span>
-                <p className="text-sm text-muted-foreground">Аудит ниши, конкурентов, контент-стратегия</p>
-              </div>
-            </div>
-
-            {/* Row 8: Languages */}
-            <div className="grid grid-cols-[200px_1fr_1fr_1fr] gap-4 mb-4">
-              <div className="flex items-center font-semibold text-foreground">
-                🌍 Языки
-              </div>
-              <div className="card-flat p-4">
-                <span className="inline-block px-3 py-1 rounded-md bg-amber-100 text-amber-900 text-sm font-semibold mb-2">
-                  1-2 языка
-                </span>
-                <p className="text-sm text-muted-foreground">Нужно искать носителей для каждого языка</p>
-              </div>
-              <div className="card-flat p-4">
-                <span className="inline-block px-3 py-1 rounded-md bg-green-100 text-green-900 text-sm font-semibold mb-2">
-                  Любые языки
-                </span>
-                <p className="text-sm text-muted-foreground">Но качество перевода может быть низким</p>
-              </div>
-              <div className="card-flat p-4 bg-primary/5 border border-primary/20">
-                <span className="inline-block px-3 py-1 rounded-md bg-green-100 text-green-900 text-sm font-semibold mb-2">
-                  6+ языков
-                </span>
-                <p className="text-sm text-muted-foreground">Пишем на английском, русском, немецком и др.</p>
-              </div>
-            </div>
-
-            {/* Row 9: Guarantees */}
+            {/* Row 7: Guarantees */}
             <div className="grid grid-cols-[200px_1fr_1fr_1fr] gap-4">
               <div className="flex items-center font-semibold text-foreground">
                 🛡️ Гарантии
@@ -250,9 +200,9 @@ const ComparisonSection = () => {
               </div>
               <div className="card-flat p-4 bg-primary/5 border border-primary/20">
                 <span className="inline-block px-3 py-1 rounded-md bg-green-100 text-green-900 text-sm font-semibold mb-2">
-                  PayPal + возврат 100%
+                  Гарантия возврата 100%
                 </span>
-                <p className="text-sm text-muted-foreground">Гарантия качества и возврат за 7 дней</p>
+                <p className="text-sm text-muted-foreground">Возврат за 7 дней, если результат не устроит</p>
               </div>
             </div>
           </div>

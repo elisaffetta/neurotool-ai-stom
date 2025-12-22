@@ -1,16 +1,16 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import PainPointsSection from "@/components/PainPointsSection";
 import ComparisonSection from "@/components/ComparisonSection";
+import SearchEvolutionSection from "@/components/SearchEvolutionSection";
 import SolutionSection from "@/components/SolutionSection";
 import ProcessSection from "@/components/ProcessSection";
 import IncludedSection from "@/components/IncludedSection";
 import ServicesSection from "@/components/ServicesSection";
+import MoneyBackSection from "@/components/MoneyBackSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import AdvantagesSection from "@/components/AdvantagesSection";
 import ExamplesSection from "@/components/ExamplesSection";
 import SEOStatsSection from "@/components/SEOStatsSection";
-import SEOTrendsSection from "@/components/SEOTrendsSection";
 import SEOGuideSection from "@/components/SEOGuideSection";
 import PricingSection from "@/components/PricingSection";
 import CalculatorSection from "@/components/CalculatorSection";
@@ -25,20 +25,20 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <PainPointsSection />
         <ComparisonSection />
+        <SearchEvolutionSection />
         <SolutionSection />
         <ProcessSection />
         <IncludedSection />
-        <ServicesSection />
         <CaseStudiesSection />
         <AdvantagesSection />
         <ExamplesSection />
         <SEOStatsSection />
-        <SEOTrendsSection />
         <SEOGuideSection />
         <PricingSection />
         <CalculatorSection />
+        <ServicesSection />
+        <MoneyBackSection />
         <TeamSection />
         <FAQSection />
         <FinalCTASection />

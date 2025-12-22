@@ -4,7 +4,7 @@ const advantages = [
   {
     icon: Zap,
     title: "Google + AI оптимизация",
-    text: "Статьи работают в классическом поиске И цитируются Perplexity, ChatGPT",
+    text: "Статьи работают в классическом поиске И цитируются ChatGPT, Perplexity",
   },
   {
     icon: Clock,
@@ -29,7 +29,7 @@ const advantages = [
   {
     icon: Shield,
     title: "Гарантия сроков",
-    text: "Никаких срывов дедлайнов. Компенсация за задержку по договору",
+    text: "Никаких срывов дедлайнов",
   },
 ];
 
