@@ -1,21 +1,20 @@
-import { Linkedin, Twitter } from "lucide-react";
+import { Mail, Twitter } from "lucide-react";
 
 const team = [
   {
-    name: "Andrey A.",
+    name: "Andrew A.",
     role: "CEO",
-    photo: "/team/andrey.jpg",
+    photo: "/team/andrew.jpg",
     links: [
-      { icon: Linkedin, url: "#" },
+      { icon: Mail, url: "mailto:andrew@neurotool.ai" },
       { icon: Twitter, url: "#" },
     ],
   },
   {
-    name: "Elisa N.",
+    name: "Lisa N.",
     role: "Prompt-engineer",
-    photo: "/team/elisa.jpg",
+    photo: "/team/lisa.jpg",
     links: [
-      { icon: Linkedin, url: "#" },
       { icon: Twitter, url: "#" },
     ],
   },
@@ -24,16 +23,14 @@ const team = [
     role: "Content director",
     photo: "/team/ilya.jpg",
     links: [
-      { icon: Linkedin, url: "#" },
       { icon: Twitter, url: "#" },
     ],
   },
   {
-    name: "Nastya S.",
+    name: "Anastasia S.",
     role: "Client Service",
-    photo: "/team/nastya.jpg",
+    photo: "/team/anastasia.jpg",
     links: [
-      { icon: Linkedin, url: "#" },
       { icon: Twitter, url: "#" },
     ],
   },
