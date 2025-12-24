@@ -10,8 +10,8 @@ const HeroSection = () => {
             Гибридный подход: живые копирайтеры в штате + 15 AI-агентов
           </div>
           
-          <h1 className="heading-1 mb-4 text-balance max-w-4xl mx-auto">
-            SEO + GEO тексты для <span className="text-primary">стоматологических клиник</span>
+          <h1 className="heading-1 mb-4 max-w-4xl mx-auto">
+            SEO + GEO тексты<br />для <span className="text-primary">стоматологических клиник</span>
           </h1>
           
           <p className="text-base mb-6 max-w-2xl mx-auto text-muted-foreground">
@@ -33,7 +33,7 @@ const HeroSection = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary-lg">
+            <button className="btn-cta-glow text-base md:text-lg py-4 px-10 whitespace-nowrap">
               Первая статья за $9.99
             </button>
             <a href="#technology" className="btn-secondary inline-flex items-center justify-center">

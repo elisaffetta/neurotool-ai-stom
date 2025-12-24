@@ -133,7 +133,7 @@ const ExamplesSection = () => {
                 Полный текст статьи доступен после заказа
               </div>
 
-              <button className="btn-primary w-full">
+              <button className="btn-cta-glow w-full py-3 px-6 text-base whitespace-nowrap">
                 Заказать похожую статью
               </button>
             </div>

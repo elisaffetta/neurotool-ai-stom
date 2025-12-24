@@ -3,7 +3,7 @@ const ComparisonSection = () => {
     <section className="section">
       <div className="container-neurotool">
         <div className="text-center mb-10">
-          <h2 className="heading-2 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Fiverr, ChatGPT или Neurotool AI — что выбрать?
           </h2>
           <p className="text-large text-muted-foreground">
@@ -209,14 +209,28 @@ const ComparisonSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="card-neurotool bg-primary/5 border-2 border-primary text-center p-8 max-w-3xl mx-auto">
-          <h3 className="text-2xl font-bold mb-3">
+        <div className="card-neurotool bg-gradient-to-br from-primary/10 via-accent to-primary/5 border-2 border-primary/30 text-center p-8 md:p-10 max-w-5xl mx-auto">
+          <h3 className="text-xl md:text-2xl font-bold mb-3 leading-tight">
             Neurotool AI = Скорость AI + Качество людей + Цена ниже Fiverr
           </h3>
-          <p className="text-body mb-6">
+          <p className="text-sm md:text-base text-muted-foreground mb-6 max-w-3xl mx-auto">
             Простое окно для заказа, живое общение, собственная технология из 15 AI-агентов
           </p>
-          <button className="btn-primary-lg">
+          
+          {/* Benefits badges */}
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 bg-card px-3 py-1.5 rounded-full border border-border shadow-sm">
+              <span className="text-xs md:text-sm font-medium">✅ 100% уникальность</span>
+            </div>
+            <div className="inline-flex items-center gap-2 bg-card px-3 py-1.5 rounded-full border border-border shadow-sm">
+              <span className="text-xs md:text-sm font-medium">🤖 Проходит AI-детекцию</span>
+            </div>
+            <div className="inline-flex items-center gap-2 bg-card px-3 py-1.5 rounded-full border border-border shadow-sm">
+              <span className="text-xs md:text-sm font-medium">⚡ Готово за 24 часа</span>
+            </div>
+          </div>
+
+          <button className="btn-cta-glow text-sm md:text-base py-3 px-8 whitespace-nowrap">
             Попробовать за $9.99
           </button>
         </div>

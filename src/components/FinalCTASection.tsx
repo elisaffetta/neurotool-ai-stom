@@ -32,14 +32,10 @@ const FinalCTASection = () => {
           </div>
 
           {/* CTA */}
-          <button className="btn-primary-lg inline-flex items-center gap-2 mb-6">
+          <button className="btn-cta-glow text-base md:text-lg py-4 px-10 inline-flex items-center gap-2 mb-6 whitespace-nowrap">
             Заказать первую статью за $9.99
             <ArrowRight className="w-5 h-5" />
           </button>
-          
-          <p className="text-sm text-muted-foreground">
-            🔒 PayPal (гарантия возврата) • 💰 100% возврат за 7 дней • ⚡ Готово за 24ч
-          </p>
         </div>
       </div>
     </section>

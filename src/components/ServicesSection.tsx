@@ -1,4 +1,4 @@
-import { FileText, ClipboardList } from "lucide-react";
+import { Calendar, FileCheck2 } from "lucide-react";
 
 const ServicesSection = () => {
   return (
@@ -11,35 +11,35 @@ const ServicesSection = () => {
           Помимо написания статей, мы помогаем с планированием контента
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Карточка 1: Контент-план */}
-          <div className="card-neurotool p-6 text-center">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mx-auto mb-4">
-              <FileText className="w-7 h-7 text-primary" />
+          <div className="card-neurotool p-8 text-center flex flex-col h-full border-2 border-transparent hover:border-primary/30 transition-all">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mx-auto mb-5 shadow-lg">
+              <Calendar className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-xl font-bold mb-2">Контент-план</h3>
-            <div className="text-3xl font-bold text-primary mb-3">$300</div>
-            <p className="text-sm text-muted-foreground mb-4">за 20 статей</p>
-            <p className="text-body mb-6">
-              Стратегия контента на 1-3 месяца. Анализируем нишу, конкурентов, собираем ключи, формируем темы статей с подробной структурой.
+            <h3 className="text-2xl font-bold mb-3 text-foreground">Контент-план</h3>
+            <div className="text-4xl font-bold text-primary mb-2">$300</div>
+            <p className="text-sm text-muted-foreground mb-6">за 20 статей</p>
+            <p className="text-base text-muted-foreground leading-relaxed mb-8 flex-grow">
+              Стратегия контента на 1–3 месяца. Анализируем нишу, конкурентов, собираем ключи, формируем темы статей с подробной структурой.
             </p>
-            <button className="btn-primary w-full">
+            <button className="btn-cta-glow w-full mt-auto py-3 px-6 text-base whitespace-nowrap">
               Заказать контент-план
             </button>
           </div>
 
           {/* Карточка 2: Технические задания */}
-          <div className="card-neurotool p-6 text-center">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mx-auto mb-4">
-              <ClipboardList className="w-7 h-7 text-primary" />
+          <div className="card-neurotool p-8 text-center flex flex-col h-full border-2 border-transparent hover:border-primary/30 transition-all">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center mx-auto mb-5 shadow-lg">
+              <FileCheck2 className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-xl font-bold mb-2">Технические задания</h3>
-            <div className="text-3xl font-bold text-primary mb-3">$500</div>
-            <p className="text-sm text-muted-foreground mb-4">за 20 статей</p>
-            <p className="text-body mb-6">
-              Расширенные ТЗ на базе контент-плана. Готовые задания можно передать любому копирайтеру.
+            <h3 className="text-2xl font-bold mb-3 text-foreground">Технические задания</h3>
+            <div className="text-4xl font-bold text-primary mb-2">$500</div>
+            <p className="text-sm text-muted-foreground mb-6">за 20 статей</p>
+            <p className="text-base text-muted-foreground leading-relaxed mb-8 flex-grow">
+              Детальный документ для каждой статьи: ключевые слова, структура, заголовки, подзаголовки и рекомендации. Готов для передачи копирайтеру.
             </p>
-            <button className="btn-primary w-full">
+            <button className="btn-cta-glow w-full mt-auto py-3 px-6 text-base whitespace-nowrap">
               Заказать ТЗ
             </button>
           </div>

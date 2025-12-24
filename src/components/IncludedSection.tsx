@@ -18,7 +18,7 @@ const IncludedSection = () => {
     <section className="section">
       <div className="container-neurotool">
         <h2 className="heading-2 text-center mb-4">
-          Что входит в SEO + GEO текст для стоматологии
+          Что входит в SEO + GEO текст<br />для стоматологии
         </h2>
         <p className="text-large text-center mb-10 max-w-2xl mx-auto">
           Полный пакет услуг для максимального эффекта от каждой статьи
@@ -34,7 +34,7 @@ const IncludedSection = () => {
         </div>
         
         <div className="text-center">
-          <button className="btn-primary-lg">
+          <button className="btn-cta-glow text-base md:text-lg py-4 px-10 whitespace-nowrap">
             Заказать статью за $9.99
           </button>
         </div>

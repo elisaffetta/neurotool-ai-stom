@@ -7,7 +7,7 @@ const ProcessSection = () => {
       <div className="container-neurotool">
         <div className="text-center mb-10">
           <h2 className="heading-2 mb-4">
-            Как создаем SEO + GEO тексты для стоматологий
+            Как создаем SEO + GEO тексты<br />для стоматологий
           </h2>
           <p className="text-large text-muted-foreground">
             Живые редакторы в штате. Гибридный подход: 15 AI-агентов + живые редакторы
@@ -56,13 +56,13 @@ const ProcessSection = () => {
         <div className="space-y-6">
           {/* Step 1 */}
           <div className="card-neurotool p-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+            <div className="flex items-start gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg">
                 1
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-2">Простая форма заказа</h3>
-                <p className="text-body">
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Простая форма заказа</h3>
+                <p className="text-base leading-relaxed text-foreground/80">
                   Можете прислать как подробное ТЗ, так и просто ключевое слово и ссылку на сайт. Наши AI-агенты сами изучат вашу нишу, конкурентов, соберут ключевые слова.
                 </p>
               </div>
@@ -71,13 +71,13 @@ const ProcessSection = () => {
 
           {/* Step 2 */}
           <div className="card-neurotool p-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+            <div className="flex items-start gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg">
                 2
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-2">Одно окно общения с человеком</h3>
-                <p className="text-body">
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Одно окно общения с человеком</h3>
+                <p className="text-base leading-relaxed text-foreground/80">
                   У каждого своя ситуация. Мы уточняем и дополняем всю нужную информацию при необходимости для создания хорошей статьи для вашего конкретного случая.
                 </p>
               </div>
@@ -85,93 +85,97 @@ const ProcessSection = () => {
           </div>
 
           {/* Step 3 - Highlighted */}
-          <div className="card-neurotool p-6 bg-primary/5 border-2 border-primary">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-primary-foreground font-bold text-xl">
+          <div className="card-neurotool p-6 bg-gradient-to-br from-primary/10 via-accent to-primary/5 border-2 border-primary/30">
+            <div className="flex items-start gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/90 flex items-center justify-center text-primary-foreground font-bold text-xl shadow-xl">
                 3
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-2">15 AI-агентов начинают работу</h3>
-                <p className="text-body mb-3"><strong>Что происходит автоматически:</strong></p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Агент 1-3:</strong> Анализируют вашу клинику (услуги, цены, УТП, целевую аудиторию)</span>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">15 AI-агентов начинают работу</h3>
+                <p className="text-base font-semibold mb-4 text-foreground">Что происходит автоматически:</p>
+                <ul className="space-y-3 text-base">
+                  <li className="flex items-start gap-3 bg-card/50 p-3 rounded-lg">
+                    <span className="text-primary font-bold text-lg shrink-0">•</span>
+                    <span className="leading-relaxed"><strong>Агент 1-3:</strong> Анализируют вашу клинику (услуги, цены, УТП, целевую аудиторию)</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Агент 4-6:</strong> Изучают конкурентов (кто в топ-10 Google, что пишут, какие ключи используют)</span>
+                  <li className="flex items-start gap-3 bg-card/50 p-3 rounded-lg">
+                    <span className="text-primary font-bold text-lg shrink-0">•</span>
+                    <span className="leading-relaxed"><strong>Агент 4-6:</strong> Изучают конкурентов (кто в топ-10 Google, что пишут, какие ключи используют)</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Агент 7-9:</strong> Проверяют нейроблоки (что показывает Perplexity и ChatGPT по вашим запросам)</span>
+                  <li className="flex items-start gap-3 bg-card/50 p-3 rounded-lg">
+                    <span className="text-primary font-bold text-lg shrink-0">•</span>
+                    <span className="leading-relaxed"><strong>Агент 7-9:</strong> Проверяют нейроблоки (что показывает Perplexity и ChatGPT по вашим запросам)</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Агент 10-12:</strong> Собирают ключевые слова и формируют структуру статьи</span>
+                  <li className="flex items-start gap-3 bg-card/50 p-3 rounded-lg">
+                    <span className="text-primary font-bold text-lg shrink-0">•</span>
+                    <span className="leading-relaxed"><strong>Агент 10-12:</strong> Собирают ключевые слова и формируют структуру статьи</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong>Агент 13-15:</strong> Пишут черновик, оптимизируют под SEO и GEO, добавляют мета-теги</span>
+                  <li className="flex items-start gap-3 bg-card/50 p-3 rounded-lg">
+                    <span className="text-primary font-bold text-lg shrink-0">•</span>
+                    <span className="leading-relaxed"><strong>Агент 13-15:</strong> Пишут черновик, оптимизируют под SEO и GEO, добавляют мета-теги</span>
                   </li>
                 </ul>
-                <p className="text-body mt-3">
-                  <strong>Всё это — автоматически через N8N.</strong> Вам не нужно разбираться в технологиях.
-                </p>
+                <div className="mt-4 p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
+                  <p className="text-base leading-relaxed text-foreground">
+                    <strong>Всё это — автоматически через N8N.</strong> Вам не нужно разбираться в технологиях.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Step 4 */}
           <div className="card-neurotool p-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+            <div className="flex items-start gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg">
                 4
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-2">Живые редакторы проверяют вручную</h3>
-                <p className="text-body mb-3"><strong>Что делают редакторы:</strong></p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>Проверяют факты (цены, методики лечения, термины)</span>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Живые редакторы проверяют вручную</h3>
+                <p className="text-base font-semibold mb-4 text-foreground">Что делают редакторы:</p>
+                <ul className="space-y-3 text-base">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-[hsl(var(--success))] flex-shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">Проверяют факты (цены, методики лечения, термины)</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>Адаптируют текст под вашу клинику (добавляют УТП, акции, tone of voice)</span>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-[hsl(var(--success))] flex-shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">Адаптируют текст под вашу клинику (добавляют УТП, акции, tone of voice)</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>Убирают "водность" и типичные AI-фразы</span>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-[hsl(var(--success))] flex-shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">Убирают "водность" и типичные AI-фразы</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>Проверяют уникальность (95%+) и AI-детекцию ("написано человеком")</span>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-[hsl(var(--success))] flex-shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">Проверяют уникальность (95%+) и AI-детекцию ("написано человеком")</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>Тестируют цитируемость в Perplexity и ChatGPT</span>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-[hsl(var(--success))] flex-shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">Тестируют цитируемость в Perplexity и ChatGPT</span>
                   </li>
                 </ul>
-                <p className="text-body mt-3">
-                  <strong>Результат:</strong> Статья выглядит как написанная профессиональным копирайтером, но создана за 24 часа.
-                </p>
+                <div className="mt-4 p-4 bg-[hsl(var(--success))]/10 rounded-lg border-l-4 border-[hsl(var(--success))]">
+                  <p className="text-base leading-relaxed text-foreground">
+                    <strong>Результат:</strong> Статья выглядит как написанная профессиональным копирайтером, но создана за 24 часа.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Step 5 */}
           <div className="card-neurotool p-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+            <div className="flex items-start gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg">
                 5
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-2">Вы получаете статью и вносите правки</h3>
-                <p className="text-body mb-2">
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Вы получаете статью и вносите правки</h3>
+                <p className="text-base leading-relaxed text-foreground/80 mb-3">
                   <strong>Как это работает:</strong> Загружаем готовую статью в Google Docs. Вы оставляете комментарии прямо в тексте — мы исправляем за 24 часа.
                 </p>
-                <p className="text-body">
+                <p className="text-base leading-relaxed text-foreground/80">
                   <strong>Включено бесплатно:</strong> До 2-3 раундов правок. Доводим текст до идеала.
                 </p>
               </div>
@@ -180,16 +184,16 @@ const ProcessSection = () => {
 
           {/* Step 6 */}
           <div className="card-neurotool p-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+            <div className="flex items-start gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center text-primary-foreground font-bold text-xl shadow-lg">
                 6
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold mb-2">Масштабируете контент</h3>
-                <p className="text-body mb-2">
+                <h3 className="text-2xl font-bold mb-3 text-foreground">Масштабируете контент</h3>
+                <p className="text-base leading-relaxed text-foreground/80 mb-3">
                   Понравилось? Заказывайте пакеты 20 статей. При необходимости мы прописываем контент-стратегию на квартал.
                 </p>
-                <p className="text-body">
+                <p className="text-base leading-relaxed text-foreground/80">
                   <strong>Пропускная способность:</strong> До 150 статей в месяц для крупных клиник и сетей.
                 </p>
               </div>

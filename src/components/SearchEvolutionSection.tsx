@@ -15,43 +15,43 @@ const SearchEvolutionSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           {/* Card 1 */}
-          <div className="card-neurotool p-6 hover:shadow-xl transition-shadow">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4">
+          <div className="card-neurotool p-8 hover:shadow-xl transition-shadow flex flex-col h-full">
+            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-5">
               <Search className="w-7 h-7 text-primary" />
             </div>
-            <h3 className="text-xl font-bold mb-3">Нейроблоки в Google</h3>
-            <p className="text-body text-muted-foreground mb-4">
+            <h3 className="text-xl font-bold mb-4 text-foreground">Нейроблоки в Google</h3>
+            <p className="text-base leading-relaxed text-foreground/80 flex-grow">
               Google показывает AI-ответы прямо в результатах. Пациенты видят информацию ещё до клика на сайт.
             </p>
-            <div className="text-sm text-primary font-semibold">
+            <div className="text-sm text-primary font-semibold pt-4 border-t border-border">
               → Если вас нет в нейроблоке — вы теряете видимость
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="card-neurotool p-6 hover:shadow-xl transition-shadow">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4">
+          <div className="card-neurotool p-8 hover:shadow-xl transition-shadow flex flex-col h-full">
+            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-5">
               <Sparkles className="w-7 h-7 text-primary" />
             </div>
-            <h3 className="text-xl font-bold mb-3">ChatGPT и Perplexity</h3>
-            <p className="text-body text-muted-foreground mb-4">
+            <h3 className="text-xl font-bold mb-4 text-foreground">ChatGPT и Perplexity</h3>
+            <p className="text-base leading-relaxed text-foreground/80 flex-grow">
               Люди спрашивают напрямую у нейроблоков. Они цитируют только сайты с экспертной информацией.
             </p>
-            <div className="text-sm text-primary font-semibold">
+            <div className="text-sm text-primary font-semibold pt-4 border-t border-border">
               → Нужна структура и глубина контента
             </div>
           </div>
 
           {/* Card 3 */}
-          <div className="card-neurotool p-6 hover:shadow-xl transition-shadow border-2 border-primary/20 bg-primary/5">
-            <div className="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-4">
+          <div className="card-neurotool p-8 hover:shadow-xl transition-shadow border-2 border-primary/20 bg-primary/5 flex flex-col h-full">
+            <div className="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-5">
               <TrendingUp className="w-7 h-7 text-primary" />
             </div>
-            <h3 className="text-xl font-bold mb-3">Что такое GEO</h3>
-            <p className="text-body text-muted-foreground mb-4">
+            <h3 className="text-xl font-bold mb-4 text-foreground">Что такое GEO</h3>
+            <p className="text-base leading-relaxed text-foreground/80 flex-grow">
               <strong>Generative Engine Optimization</strong> — оптимизация под нейроблоки. Новый стандарт продвижения.
             </p>
-            <div className="text-sm text-primary font-semibold">
+            <div className="text-sm text-primary font-semibold pt-4 border-t border-border">
               → SEO + GEO = двойной трафик
             </div>
           </div>

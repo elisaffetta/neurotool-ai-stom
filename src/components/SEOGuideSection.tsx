@@ -100,7 +100,7 @@ const SEOGuideSection = () => {
           <p className="text-body mb-4">
             <strong>Не знаете, с чего начать?</strong> Закажите контент-план — мы проанализируем вашу нишу и составим стратегию.
           </p>
-          <button className="btn-primary-lg">
+          <button className="btn-cta-glow text-base md:text-lg py-4 px-10 whitespace-nowrap">
             Заказать контент-план
           </button>
         </div>
