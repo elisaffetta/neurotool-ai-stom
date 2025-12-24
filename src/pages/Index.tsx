@@ -30,7 +30,6 @@ const Index = () => {
         <SolutionSection />
         <ProcessSection />
         <IncludedSection />
-        <CaseStudiesSection />
         <AdvantagesSection />
         <ExamplesSection />
         <SEOStatsSection />
@@ -39,6 +38,7 @@ const Index = () => {
         <CalculatorSection />
         <ServicesSection />
         <MoneyBackSection />
+        <CaseStudiesSection />
         <TeamSection />
         <FAQSection />
         <FinalCTASection />

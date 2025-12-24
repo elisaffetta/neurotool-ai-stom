@@ -4,6 +4,7 @@ const team = [
   {
     name: "Andrey A.",
     role: "CEO",
+    photo: "/team/andrey.jpg",
     links: [
       { icon: Linkedin, url: "#" },
       { icon: Twitter, url: "#" },
@@ -12,6 +13,7 @@ const team = [
   {
     name: "Elisa N.",
     role: "Prompt-engineer",
+    photo: "/team/elisa.jpg",
     links: [
       { icon: Linkedin, url: "#" },
       { icon: Twitter, url: "#" },
@@ -20,6 +22,7 @@ const team = [
   {
     name: "Ilya M.",
     role: "Content director",
+    photo: "/team/ilya.jpg",
     links: [
       { icon: Linkedin, url: "#" },
       { icon: Twitter, url: "#" },
@@ -28,6 +31,7 @@ const team = [
   {
     name: "Nastya S.",
     role: "Client Service",
+    photo: "/team/nastya.jpg",
     links: [
       { icon: Linkedin, url: "#" },
       { icon: Twitter, url: "#" },
@@ -49,8 +53,22 @@ const TeamSection = () => {
         <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {team.map((member, index) => (
             <div key={index} className="card-neurotool text-center p-6">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-primary">
-                {member.name.charAt(0)}
+              <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5">
+                {member.photo ? (
+                  <img 
+                    src={member.photo} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.parentElement!.innerHTML = `<div class="w-full h-full flex items-center justify-center text-2xl font-bold text-primary">${member.name.charAt(0)}</div>`;
+                    }}
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-2xl font-bold text-primary">
+                    {member.name.charAt(0)}
+                  </div>
+                )}
               </div>
               
               <h3 className="text-lg font-bold text-foreground mb-1">{member.name}</h3>
